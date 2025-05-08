@@ -1,16 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Lit + TS</title>
-    <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
+    <title>USBE Component Demo (via GitHub)</title>
+    <script type="module" src="/src/main.ts"></script>
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
+    <h1>USBE Components Demo</h1>
+
+    <section>
+      <h2>&lt;usbe-button&gt;</h2>
+      <usbe-button></usbe-button>
+    </section>
+
+    <section>
+      <h2>&lt;usbe-card&gt;</h2>
+      <usbe-card title="Demo Card" content="This is a Lit card.">
+        <usbe-button></usbe-button>
+      </usbe-card>
+    </section>
+
+    <section>
+      <h2>&lt;usbe-input&gt;</h2>
+      <usbe-input label="First Name"></usbe-input>
+    </section>
+
+    <section>
+      <h2>&lt;usbe-alert&gt;</h2>
+      <usbe-alert type="error" message="Operation successful!"></usbe-alert>
+    </section>
+
+    <section>
+      <h2>&lt;usbe-alert&gt;</h2>
+      <usbe-alert type="success" message="Operation successful!"></usbe-alert>
+    </section>
+
+    <section>
+      <h2>&lt;usbe-alert&gt;</h2>
+      <usbe-alert type="info" message="Operation successful!"></usbe-alert>
+    </section>
+
+    <section>
+      <h2>&lt;usbe-select&gt;</h2>
+      <usbe-select></usbe-select>
+    </section>
+
+    <section>
+      <h2>&lt;usbe-dialog&gt;</h2>
+      <usbe-dialog></usbe-dialog>
+    </section>
   </body>
 </html>
