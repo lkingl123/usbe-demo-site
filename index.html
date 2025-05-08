@@ -7,48 +7,57 @@
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
-    <h1>USBE Components Demo</h1>
+    <h1>USBE Components Demo – Custom Usage</h1>
 
     <section>
       <h2>&lt;usbe-button&gt;</h2>
-      <usbe-button></usbe-button>
+      <usbe-button>Submit Form</usbe-button>
     </section>
 
     <section>
       <h2>&lt;usbe-card&gt;</h2>
-      <usbe-card title="Demo Card" content="This is a Lit card.">
-        <usbe-button></usbe-button>
+      <usbe-card title="Welcome to USBE" content="Explore the power of custom Web Components.">
+        <usbe-button>Learn More</usbe-button>
       </usbe-card>
     </section>
 
     <section>
       <h2>&lt;usbe-input&gt;</h2>
-      <usbe-input label="First Name"></usbe-input>
+      <usbe-input label="Enter Email Address"></usbe-input>
     </section>
 
     <section>
-      <h2>&lt;usbe-alert&gt;</h2>
-      <usbe-alert type="error" message="Operation successful!"></usbe-alert>
+      <h2>&lt;usbe-alert&gt; (Error Example)</h2>
+      <usbe-alert type="error" message="❌ Failed to load student data."></usbe-alert>
     </section>
 
     <section>
-      <h2>&lt;usbe-alert&gt;</h2>
-      <usbe-alert type="success" message="Operation successful!"></usbe-alert>
+      <h2>&lt;usbe-alert&gt; (Success Example)</h2>
+      <usbe-alert type="success" message="✅ Profile updated successfully!"></usbe-alert>
     </section>
 
     <section>
-      <h2>&lt;usbe-alert&gt;</h2>
-      <usbe-alert type="info" message="Operation successful!"></usbe-alert>
+      <h2>&lt;usbe-alert&gt; (Info Example)</h2>
+      <usbe-alert type="info" message="ℹ️ Your session will expire in 5 minutes."></usbe-alert>
     </section>
 
     <section>
       <h2>&lt;usbe-select&gt;</h2>
-      <usbe-select></usbe-select>
+      <usbe-select>
+        <option value="">-- Please choose a grade --</option>
+        <option value="k">Kindergarten</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+      </usbe-select>
     </section>
 
     <section>
       <h2>&lt;usbe-dialog&gt;</h2>
-      <usbe-dialog></usbe-dialog>
+      <usbe-dialog>
+        <h3 slot="title">Confirm Deletion</h3>
+        <p slot="body">Are you sure you want to delete this record? This action cannot be undone.</p>
+      </usbe-dialog>
     </section>
   </body>
 </html>
